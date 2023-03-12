@@ -12,6 +12,7 @@
 		6F1CDD0529BDC6AB00A2A23B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F1CDD0429BDC6AB00A2A23B /* Assets.xcassets */; };
 		6F1CDD0929BDC6AB00A2A23B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F1CDD0829BDC6AB00A2A23B /* Preview Assets.xcassets */; };
 		6F1CDD1C29BDD05200A2A23B /* GrayedText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1CDD1B29BDD05200A2A23B /* GrayedText.swift */; };
+		6F1CDD1E29BDD22200A2A23B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6F1CDD1D29BDD22200A2A23B /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		6F1CDD0629BDC6AB00A2A23B /* AlarmApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AlarmApp.entitlements; sourceTree = "<group>"; };
 		6F1CDD0829BDC6AB00A2A23B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		6F1CDD1B29BDD05200A2A23B /* GrayedText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrayedText.swift; sourceTree = "<group>"; };
+		6F1CDD1D29BDD22200A2A23B /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 				6F1CDD0429BDC6AB00A2A23B /* Assets.xcassets */,
 				6F1CDD0629BDC6AB00A2A23B /* AlarmApp.entitlements */,
 				6F1CDD0729BDC6AB00A2A23B /* Preview Content */,
+				6F1CDD1D29BDD22200A2A23B /* Localizable.strings */,
 			);
 			path = AlarmApp;
 			sourceTree = "<group>";
@@ -210,6 +213,8 @@
 			knownRegions = (
 				en,
 				Base,
+				fr,
+				de,
 			);
 			mainGroup = 6F1CDCF429BDC6AA00A2A23B;
 			productRefGroup = 6F1CDCFE29BDC6AA00A2A23B /* Products */;
@@ -227,6 +232,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6F1CDD0929BDC6AB00A2A23B /* Preview Assets.xcassets in Resources */,
+				6F1CDD1E29BDD22200A2A23B /* Localizable.strings in Resources */,
 				6F1CDD0529BDC6AB00A2A23B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
