@@ -12,7 +12,7 @@
 		6F1CDD0529BDC6AB00A2A23B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F1CDD0429BDC6AB00A2A23B /* Assets.xcassets */; };
 		6F1CDD0929BDC6AB00A2A23B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F1CDD0829BDC6AB00A2A23B /* Preview Assets.xcassets */; };
 		6F1CDD1C29BDD05200A2A23B /* GrayedText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1CDD1B29BDD05200A2A23B /* GrayedText.swift */; };
-		6F1CDD1E29BDD22200A2A23B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6F1CDD1D29BDD22200A2A23B /* Localizable.strings */; };
+		6F1CDD1F29BDD7A100A2A23B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6F1CDD2129BDD7A100A2A23B /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +23,9 @@
 		6F1CDD0629BDC6AB00A2A23B /* AlarmApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AlarmApp.entitlements; sourceTree = "<group>"; };
 		6F1CDD0829BDC6AB00A2A23B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		6F1CDD1B29BDD05200A2A23B /* GrayedText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrayedText.swift; sourceTree = "<group>"; };
-		6F1CDD1D29BDD22200A2A23B /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		6F1CDD2029BDD7A100A2A23B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		6F1CDD2229BDD7A800A2A23B /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		6F1CDD2329BDD7AA00A2A23B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,7 +71,7 @@
 				6F1CDD0429BDC6AB00A2A23B /* Assets.xcassets */,
 				6F1CDD0629BDC6AB00A2A23B /* AlarmApp.entitlements */,
 				6F1CDD0729BDC6AB00A2A23B /* Preview Content */,
-				6F1CDD1D29BDD22200A2A23B /* Localizable.strings */,
+				6F1CDD2129BDD7A100A2A23B /* Localizable.strings */,
 			);
 			path = AlarmApp;
 			sourceTree = "<group>";
@@ -232,7 +234,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6F1CDD0929BDC6AB00A2A23B /* Preview Assets.xcassets in Resources */,
-				6F1CDD1E29BDD22200A2A23B /* Localizable.strings in Resources */,
+				6F1CDD1F29BDD7A100A2A23B /* Localizable.strings in Resources */,
 				6F1CDD0529BDC6AB00A2A23B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -251,6 +253,19 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6F1CDD2129BDD7A100A2A23B /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6F1CDD2029BDD7A100A2A23B /* en */,
+				6F1CDD2229BDD7A800A2A23B /* fr */,
+				6F1CDD2329BDD7AA00A2A23B /* de */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		6F1CDD0A29BDC6AB00A2A23B /* Debug */ = {

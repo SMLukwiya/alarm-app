@@ -13,6 +13,6 @@ struct GrayedText: View {
 
 struct GrayedText_Previews: PreviewProvider {
     static var previews: some View {
-        GrayedText(text: "Alarm App inspired by the need to secure the bag")
+        GrayedText(text: "Time is what we want most but what we use worst. Get up and Inspire", font: .title)
     }
 }
