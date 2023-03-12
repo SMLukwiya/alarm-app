@@ -32,3 +32,21 @@ func getTimeFromDate(date: Date) -> String {
 func addTimeToDate(date: Date, hours: Int, minutes: Int) -> Date {
     date.addingTimeInterval(TimeInterval(hours * 3600 + minutes * 60))
 }
+
+func formatDate(date: Date) -> String {
+    let result = getTimeComponents(date: date)
+    return "\(result.day)-\(result.month)\(result.year) (\(result.hour):\(result.minute))       "
+}
+
+func dateToTimeModel(date: Date) -> TimeModel {
+    let results = getTimeComponents(date: date)
+    
+    return TimeModel(hours: results.hour, minutes: results.minute)
+}
+
+// Extension for subtracting dates
+extension Date {
+    static func - (lhs: Date, rhs: Date) -> TimeInterval {
+        lhs.timeIntervalSinceReferenceDate - rhs.timeIntervalSinceReferenceDate
+    }
+}
