@@ -11,6 +11,7 @@
 		6F1CDD0329BDC6AA00A2A23B /* MainAlarmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1CDD0229BDC6AA00A2A23B /* MainAlarmView.swift */; };
 		6F1CDD0529BDC6AB00A2A23B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F1CDD0429BDC6AB00A2A23B /* Assets.xcassets */; };
 		6F1CDD0929BDC6AB00A2A23B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F1CDD0829BDC6AB00A2A23B /* Preview Assets.xcassets */; };
+		6F1CDD1C29BDD05200A2A23B /* GrayedText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1CDD1B29BDD05200A2A23B /* GrayedText.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		6F1CDD0429BDC6AB00A2A23B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6F1CDD0629BDC6AB00A2A23B /* AlarmApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AlarmApp.entitlements; sourceTree = "<group>"; };
 		6F1CDD0829BDC6AB00A2A23B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6F1CDD1B29BDD05200A2A23B /* GrayedText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrayedText.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +156,7 @@
 		6F1CDD1929BDCD2400A2A23B /* AuxilliaryViews */ = {
 			isa = PBXGroup;
 			children = (
+				6F1CDD1B29BDD05200A2A23B /* GrayedText.swift */,
 			);
 			path = AuxilliaryViews;
 			sourceTree = "<group>";
@@ -235,6 +238,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F1CDD1C29BDD05200A2A23B /* GrayedText.swift in Sources */,
 				6F1CDD0329BDC6AA00A2A23B /* MainAlarmView.swift in Sources */,
 				6F1CDD0129BDC6AA00A2A23B /* AlarmAppApp.swift in Sources */,
 			);
