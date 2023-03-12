@@ -43,4 +43,19 @@ struct AlarmModel: Identifiable {
                    colorIndex: 0
         )
     }
+    
+    static func DummyAlarmData() -> [AlarmModel] {
+        [
+            AlarmModel(title: "Activity",
+                       body: "Seek and you shall find",
+                       repeats: false,
+                       sound: .wake_up,
+                       alarmEnabled: true,
+                       start: Date(),
+                       end: addTimeToDate(date: Date(), hours: 4, minutes: 30),
+                       activity: "moon.zzz.fill",
+                       colorIndex: 0
+            )
+        ].sorted(by: {$0.endTime < $1.endTime})
+    }
 }
