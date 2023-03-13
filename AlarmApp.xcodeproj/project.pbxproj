@@ -22,6 +22,8 @@
 		6F1CDD3329BE0DAF00A2A23B /* SoundConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1CDD3229BE0DAF00A2A23B /* SoundConstants.swift */; };
 		6F1CDD3529BEC12200A2A23B /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1CDD3429BEC12200A2A23B /* SplashScreen.swift */; };
 		6F1CDD3729BEC45100A2A23B /* CoolSplashScreenComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1CDD3629BEC45100A2A23B /* CoolSplashScreenComponent.swift */; };
+		6F1CDD3A29BECF8F00A2A23B /* WorkSans-Italic-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6F1CDD3829BECF8E00A2A23B /* WorkSans-Italic-VariableFont_wght.ttf */; };
+		6F1CDD3B29BECF8F00A2A23B /* WorkSans-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6F1CDD3929BECF8F00A2A23B /* WorkSans-VariableFont_wght.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +46,8 @@
 		6F1CDD3229BE0DAF00A2A23B /* SoundConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundConstants.swift; sourceTree = "<group>"; };
 		6F1CDD3429BEC12200A2A23B /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
 		6F1CDD3629BEC45100A2A23B /* CoolSplashScreenComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoolSplashScreenComponent.swift; sourceTree = "<group>"; };
+		6F1CDD3829BECF8E00A2A23B /* WorkSans-Italic-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WorkSans-Italic-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+		6F1CDD3929BECF8F00A2A23B /* WorkSans-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WorkSans-VariableFont_wght.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +145,8 @@
 		6F1CDD1329BDCC6F00A2A23B /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				6F1CDD3829BECF8E00A2A23B /* WorkSans-Italic-VariableFont_wght.ttf */,
+				6F1CDD3929BECF8F00A2A23B /* WorkSans-VariableFont_wght.ttf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -263,6 +269,8 @@
 				6F1CDD0929BDC6AB00A2A23B /* Preview Assets.xcassets in Resources */,
 				6F1CDD1F29BDD7A100A2A23B /* Localizable.strings in Resources */,
 				6F1CDD0529BDC6AB00A2A23B /* Assets.xcassets in Resources */,
+				6F1CDD3B29BECF8F00A2A23B /* WorkSans-VariableFont_wght.ttf in Resources */,
+				6F1CDD3A29BECF8F00A2A23B /* WorkSans-Italic-VariableFont_wght.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

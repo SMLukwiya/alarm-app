@@ -11,7 +11,7 @@ struct SplashScreen: View {
             MainAlarmView()
         } else {
             ZStack {
-                CoolSplashScreenComponent()
+                CoolSplashScreenComponent(color1: blue, color2: .clear  )
                 VStack {
                     VStack(alignment: .leading, spacing: 0) {
                         Text("Hey")
