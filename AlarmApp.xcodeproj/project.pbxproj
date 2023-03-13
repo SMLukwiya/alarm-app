@@ -24,6 +24,7 @@
 		6F1CDD3729BEC45100A2A23B /* CoolSplashScreenComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1CDD3629BEC45100A2A23B /* CoolSplashScreenComponent.swift */; };
 		6F1CDD3A29BECF8F00A2A23B /* WorkSans-Italic-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6F1CDD3829BECF8E00A2A23B /* WorkSans-Italic-VariableFont_wght.ttf */; };
 		6F1CDD3B29BECF8F00A2A23B /* WorkSans-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6F1CDD3929BECF8F00A2A23B /* WorkSans-VariableFont_wght.ttf */; };
+		6F1CDD3D29BED05B00A2A23B /* CustomText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1CDD3C29BED05B00A2A23B /* CustomText.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		6F1CDD3629BEC45100A2A23B /* CoolSplashScreenComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoolSplashScreenComponent.swift; sourceTree = "<group>"; };
 		6F1CDD3829BECF8E00A2A23B /* WorkSans-Italic-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WorkSans-Italic-VariableFont_wght.ttf"; sourceTree = "<group>"; };
 		6F1CDD3929BECF8F00A2A23B /* WorkSans-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WorkSans-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+		6F1CDD3C29BED05B00A2A23B /* CustomText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomText.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,6 +197,7 @@
 				6F1CDD1B29BDD05200A2A23B /* GrayedText.swift */,
 				6F1CDD2629BDECAF00A2A23B /* TimeOfDayIcon.swift */,
 				6F1CDD3629BEC45100A2A23B /* CoolSplashScreenComponent.swift */,
+				6F1CDD3C29BED05B00A2A23B /* CustomText.swift */,
 			);
 			path = AuxilliaryViews;
 			sourceTree = "<group>";
@@ -281,6 +284,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F1CDD3D29BED05B00A2A23B /* CustomText.swift in Sources */,
 				6F1CDD2B29BDED1900A2A23B /* TimeAndDateUtils.swift in Sources */,
 				6F1CDD3729BEC45100A2A23B /* CoolSplashScreenComponent.swift in Sources */,
 				6F1CDD2F29BE058A00A2A23B /* AlarmModel.swift in Sources */,

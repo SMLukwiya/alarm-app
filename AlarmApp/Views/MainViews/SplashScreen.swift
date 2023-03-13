@@ -14,13 +14,13 @@ struct SplashScreen: View {
                 CoolSplashScreenComponent(color1: blue, color2: .clear  )
                 VStack {
                     VStack(alignment: .leading, spacing: 0) {
-                        Text("Hey")
-                        Text("Let's add an alarm")
+                        CustomText(text: LocalizedStringKey("hello there!"), size: fontSize)
+                        CustomText(text: LocalizedStringKey("let's add an alarm"), size: fontSize)
                     }
                     .multilineTextAlignment(.leading)
                     .padding()
                     .onAppear {
-                        withAnimation(.easeIn(duration: 1.5)) {
+                        withAnimation(.easeIn(duration: 2.5)) {
                             opacity = 1.0
                             fontSize = 36.0
                         }
