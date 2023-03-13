@@ -11,7 +11,7 @@ struct SplashScreen: View {
             MainAlarmView()
         } else {
             ZStack {
-                CoolSplashScreenComponent(color1: blue, color2: .clear  )
+                CoolSplashScreenComponent(color1: blue, color2: .clear)
                 VStack {
                     VStack(alignment: .leading, spacing: 0) {
                         CustomText(text: LocalizedStringKey("hello there!"), size: fontSize)
@@ -26,10 +26,16 @@ struct SplashScreen: View {
                         }
                     }
                     
-                    
                     Spacer()
                     
-                    Text("Some Image")
+                    Image(welcome).resizable().scaledToFit()
+                    Spacer()
+                }
+            }
+            .opacity(opacity)
+            .onAppear {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+                    withAnimation { isActive = true }   
                 }
             }
         }

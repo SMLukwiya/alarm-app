@@ -38,7 +38,7 @@ struct CoolSplashScreenComponent: View {
                 .offset(x: offsetX[3], y: offsetY[3])
         }
         .onReceive(timer) { _ in
-            withAnimation(.easeIn(duration: 20)) {
+            withAnimation(.easeIn(duration: 30)) {
                 for i in 0..<offsetX.count {
                     offsetX[i] = Double.random(in: -300...300)
                     offsetY[i] = Double.random(in: -300...300)
