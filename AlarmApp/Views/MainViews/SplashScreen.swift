@@ -11,22 +11,26 @@ struct SplashScreen: View {
             MainAlarmView()
         } else {
             ZStack {
-                VStack(alignment: .leading, spacing: 0) {
-                    Text("Hey")
-                    Text("Let's add an alarm")
-                }
-                .multilineTextAlignment(.leading)
-                .padding()
-                .onAppear {
-                    withAnimation(.easeIn(duration: 1.5)) {
-                        opacity = 1.0
-                        fontSize = 36.0
+                CoolSplashScreenComponent()
+                VStack {
+                    VStack(alignment: .leading, spacing: 0) {
+                        Text("Hey")
+                        Text("Let's add an alarm")
                     }
+                    .multilineTextAlignment(.leading)
+                    .padding()
+                    .onAppear {
+                        withAnimation(.easeIn(duration: 1.5)) {
+                            opacity = 1.0
+                            fontSize = 36.0
+                        }
+                    }
+                    
+                    
+                    Spacer()
+                    
+                    Text("Some Image")
                 }
-                
-                Spacer()
-                
-                Text("Some Image")
             }
         }
     }
