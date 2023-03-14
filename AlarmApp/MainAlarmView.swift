@@ -1,21 +1,19 @@
-//
-//  ContentView.swift
-//  AlarmApp
-//
-//  Created by m1 on 12/03/2023.
-//
 
 import SwiftUI
 
 struct MainAlarmView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, Alarm!")
+        TabView {
+        //AddEditAlarmView(currentAlarmIndex: 0, alarmModel: .DefaultAlarm())
+            ListOfAlarms(alarmListModels: AlarmModel.DummyAlarmData())
+                .tabItem({
+                    Label("", systemImage: "alarm.fill")
+                })
+            AboutView()
+                .tabItem({
+                    Label("About", systemImage: "info.circle.fill")
+                })
         }
-        .padding()
     }
 }
 
