@@ -5,13 +5,12 @@ struct MainGradient: View {
     var startRadius: CGFloat = 0.0
     let endRadius: CGFloat
     var scaleX: CGFloat = 2.0
-    var opacityLinearGradient = 0.5
-    var opacityRadialGradient = 1.0
+    var opacityLinearGradient = 0.7
     var colorYellow: Color = .yellow
     
     var body: some View {
         ZStack {
-            LinearGradient(colors: [blue, blue, pink], startPoint: .topLeading, endPoint: .bottomTrailing)
+            LinearGradient(colors: [blue, pink], startPoint: .topLeading, endPoint: .bottomTrailing)
                 .opacity(opacityLinearGradient)
         }
     }

@@ -38,7 +38,8 @@ struct AlarmModel: Identifiable {
                    sound: .wake_up,
                    alarmEnabled: false,
                    start: Date(),
-                   end: Date(),
+                   //end: Date(),
+                   end: addTimeToDate(date: Date(), hours: 12, minutes: 0),
                    activity: activities[0],
                    colorIndex: 0
         )
