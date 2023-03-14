@@ -7,8 +7,9 @@ struct WakeUp: View {
     
     var body: some View {
         VStack {
-            Text("Cancel or Save")
-            Text("Toggle")
+            CancelSaveAlarm(currentAlarmIndex: currentAlarmIndex, alarmModel: $alarmModel)
+            
+            AlarmToggleView(alarmEnabled: $alarmModel.alarmEnabled)
             
             Divider()
             

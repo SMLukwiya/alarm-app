@@ -34,6 +34,9 @@
 		6F1CDD4B29BF9A1A00A2A23B /* AddEditAlarmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1CDD4A29BF9A1A00A2A23B /* AddEditAlarmView.swift */; };
 		6F1CDD4D29C00F6400A2A23B /* YouDidIt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1CDD4C29C00F6400A2A23B /* YouDidIt.swift */; };
 		6F1CDD4F29C0150400A2A23B /* WakeUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1CDD4E29C0150400A2A23B /* WakeUp.swift */; };
+		6F1CDD5129C01C9F00A2A23B /* CancelSaveAlarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1CDD5029C01C9F00A2A23B /* CancelSaveAlarm.swift */; };
+		6F1CDD5329C01F1100A2A23B /* AlarmToggleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1CDD5229C01F1100A2A23B /* AlarmToggleView.swift */; };
+		6F1CDD5529C0212B00A2A23B /* ToggleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1CDD5429C0212B00A2A23B /* ToggleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +71,9 @@
 		6F1CDD4A29BF9A1A00A2A23B /* AddEditAlarmView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEditAlarmView.swift; sourceTree = "<group>"; };
 		6F1CDD4C29C00F6400A2A23B /* YouDidIt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouDidIt.swift; sourceTree = "<group>"; };
 		6F1CDD4E29C0150400A2A23B /* WakeUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WakeUp.swift; sourceTree = "<group>"; };
+		6F1CDD5029C01C9F00A2A23B /* CancelSaveAlarm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancelSaveAlarm.swift; sourceTree = "<group>"; };
+		6F1CDD5229C01F1100A2A23B /* AlarmToggleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmToggleView.swift; sourceTree = "<group>"; };
+		6F1CDD5429C0212B00A2A23B /* ToggleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -225,6 +231,9 @@
 				6F1CDD3629BEC45100A2A23B /* CoolSplashScreenComponent.swift */,
 				6F1CDD3C29BED05B00A2A23B /* CustomText.swift */,
 				6F1CDD4629BEE14700A2A23B /* CustomButton.swift */,
+				6F1CDD5029C01C9F00A2A23B /* CancelSaveAlarm.swift */,
+				6F1CDD5229C01F1100A2A23B /* AlarmToggleView.swift */,
+				6F1CDD5429C0212B00A2A23B /* ToggleView.swift */,
 			);
 			path = AuxilliaryViews;
 			sourceTree = "<group>";
@@ -314,6 +323,8 @@
 				6F1CDD4F29C0150400A2A23B /* WakeUp.swift in Sources */,
 				6F1CDD4329BEDBB200A2A23B /* MainGradient.swift in Sources */,
 				6F1CDD3D29BED05B00A2A23B /* CustomText.swift in Sources */,
+				6F1CDD5529C0212B00A2A23B /* ToggleView.swift in Sources */,
+				6F1CDD5329C01F1100A2A23B /* AlarmToggleView.swift in Sources */,
 				6F1CDD4729BEE14700A2A23B /* CustomButton.swift in Sources */,
 				6F1CDD2B29BDED1900A2A23B /* TimeAndDateUtils.swift in Sources */,
 				6F1CDD3729BEC45100A2A23B /* CoolSplashScreenComponent.swift in Sources */,
@@ -329,6 +340,7 @@
 				6F1CDD0129BDC6AA00A2A23B /* AlarmAppApp.swift in Sources */,
 				6F1CDD4129BED9E900A2A23B /* EnableNotifications.swift in Sources */,
 				6F1CDD2529BDE92200A2A23B /* ColorConstants.swift in Sources */,
+				6F1CDD5129C01C9F00A2A23B /* CancelSaveAlarm.swift in Sources */,
 				6F1CDD4929BF92C300A2A23B /* AboutView.swift in Sources */,
 				6F1CDD4B29BF9A1A00A2A23B /* AddEditAlarmView.swift in Sources */,
 				6F1CDD3129BE0BCF00A2A23B /* AcitivityConstants.swift in Sources */,
