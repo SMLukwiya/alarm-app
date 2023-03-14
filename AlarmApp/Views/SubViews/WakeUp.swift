@@ -21,7 +21,7 @@ struct WakeUp: View {
                         VStack(alignment: .leading) {
                             GrayedText(text: "start")
                             
-                            Text("Time picker")
+                            TimePicker(time: $alarmModel.start, scale: 1.3)
                         }
                     }
                     
@@ -47,7 +47,7 @@ struct WakeUp: View {
                     GridRow {
                         TimeOfDayIcon(date: alarmModel.start).font(.title)
                         VStack(alignment: .leading) {
-                            Text("Time picker")
+                            TimePicker(time: $alarmModel.end, scale: 1.3)
                             GrayedText(text: "end   ")
                         }
                     }
