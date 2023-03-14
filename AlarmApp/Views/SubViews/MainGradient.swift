@@ -11,16 +11,8 @@ struct MainGradient: View {
     
     var body: some View {
         ZStack {
-            LinearGradient(colors: [.blue, blue, .purple.opacity(0.5)], startPoint: .top, endPoint: .bottom)
+            LinearGradient(colors: [blue, blue, pink], startPoint: .topLeading, endPoint: .bottomTrailing)
                 .opacity(opacityLinearGradient)
-            
-            RadialGradient(
-                colors: [blue, .clear],
-                center: .bottom,
-                startRadius: startRadius,
-                endRadius: endRadius)
-            .opacity(opacityRadialGradient)
-            .scaleEffect(x: scaleX)
         }
     }
 }

@@ -6,26 +6,24 @@ struct ListOfAlarms: View {
     
     var body: some View {
         NavigationStack {
-            List {
-                ForEach(0..<5) { _ in
-                    let model = alarmListModels[0]
-                    
-                    NavigationLink(destination: {
-                        Text("data for alarm")
-                    }, label: {
-                        HStack {
-                            Image(systemName: model.activity)
-                                .foregroundColor(model.activityColor)
-                            Text("Alarm row view")
-                        }
-                    })
+            ZStack {
+                List {
+                    ForEach(0..<5) { i in
+                        let model = alarmListModels[0]
+                        
+                        NavigationLink(destination: {
+                            AddEditAlarmView(currentAlarmIndex: i, alarmModel: model)
+                        }, label: {
+                            AlarmRow(model: model, i: 0)
+                        })
+                    }
                 }
             }
             .navigationTitle("Alarm List")
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     NavigationLink(destination: {
-                        Text("Create new Alarm")
+                        AddEditAlarmView(currentAlarmIndex: nil, alarmModel: .DefaultAlarm())
                     }, label: {
                         Text("+")
                             .font(.largeTitle)

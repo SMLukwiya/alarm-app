@@ -40,6 +40,8 @@
 		6F1CDD5729C0643200A2A23B /* TimePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1CDD5629C0643200A2A23B /* TimePicker.swift */; };
 		6F1CDD5929C0672D00A2A23B /* SelectActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1CDD5829C0672D00A2A23B /* SelectActivity.swift */; };
 		6F1CDD5B29C0A2F600A2A23B /* ListOfAlarms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1CDD5A29C0A2F600A2A23B /* ListOfAlarms.swift */; };
+		6F1CDD5D29C0AD8000A2A23B /* AlarmRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1CDD5C29C0AD8000A2A23B /* AlarmRow.swift */; };
+		6F1CDD5F29C0B82500A2A23B /* AddEditCircularAlarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1CDD5E29C0B82500A2A23B /* AddEditCircularAlarm.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -80,6 +82,8 @@
 		6F1CDD5629C0643200A2A23B /* TimePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimePicker.swift; sourceTree = "<group>"; };
 		6F1CDD5829C0672D00A2A23B /* SelectActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectActivity.swift; sourceTree = "<group>"; };
 		6F1CDD5A29C0A2F600A2A23B /* ListOfAlarms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfAlarms.swift; sourceTree = "<group>"; };
+		6F1CDD5C29C0AD8000A2A23B /* AlarmRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmRow.swift; sourceTree = "<group>"; };
+		6F1CDD5E29C0B82500A2A23B /* AddEditCircularAlarm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEditCircularAlarm.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -243,6 +247,8 @@
 				6F1CDD5429C0212B00A2A23B /* ToggleView.swift */,
 				6F1CDD5629C0643200A2A23B /* TimePicker.swift */,
 				6F1CDD5829C0672D00A2A23B /* SelectActivity.swift */,
+				6F1CDD5C29C0AD8000A2A23B /* AlarmRow.swift */,
+				6F1CDD5E29C0B82500A2A23B /* AddEditCircularAlarm.swift */,
 			);
 			path = AuxilliaryViews;
 			sourceTree = "<group>";
@@ -330,6 +336,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6F1CDD4F29C0150400A2A23B /* WakeUp.swift in Sources */,
+				6F1CDD5D29C0AD8000A2A23B /* AlarmRow.swift in Sources */,
 				6F1CDD4329BEDBB200A2A23B /* MainGradient.swift in Sources */,
 				6F1CDD3D29BED05B00A2A23B /* CustomText.swift in Sources */,
 				6F1CDD5529C0212B00A2A23B /* ToggleView.swift in Sources */,
@@ -346,6 +353,7 @@
 				6F1CDD0329BDC6AA00A2A23B /* MainAlarmView.swift in Sources */,
 				6F1CDD3F29BED74700A2A23B /* ImageConstants.swift in Sources */,
 				6F1CDD4529BEDE3700A2A23B /* ScreenConstants.swift in Sources */,
+				6F1CDD5F29C0B82500A2A23B /* AddEditCircularAlarm.swift in Sources */,
 				6F1CDD2D29BDFE2E00A2A23B /* TimeModel.swift in Sources */,
 				6F1CDD3529BEC12200A2A23B /* SplashScreen.swift in Sources */,
 				6F1CDD0129BDC6AA00A2A23B /* AlarmAppApp.swift in Sources */,
