@@ -14,11 +14,14 @@ struct AddEditAlarmView: View {
                 if showYouDidItView {
                     YouDidIt()
                 }
+                WakeUp(currentAlarmIndex: currentAlarmIndex, alarmModel: alarmModel)
             }
         }
         .onAppear {
-            DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
-                showYouDidItView = false
+            DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+                withAnimation {
+                    showYouDidItView = false
+                }
             }
         }
     }
