@@ -19,7 +19,7 @@ struct SelectActivity: View {
                     let selectedActivity = activity == currentActivity
                     
                     Image(systemName: activity)
-                        .font(selectedActivity ? .title  : .subheadline)
+                        .font(selectedActivity ? .title : .subheadline)
                         .foregroundColor(selectedActivity ? currentColor : lightBlue)
                         .onTapGesture {
                             withAnimation {

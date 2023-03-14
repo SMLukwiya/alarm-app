@@ -35,7 +35,8 @@ struct WakeUp: View {
                         Image(systemName: alarmModel.activity)
                             .foregroundColor(alarmModel.activityColor)
                             .font(.headline)
-                        Text("Select Activity View")
+                        
+                        SelectActivity(currentColorIndex: $alarmModel.colorIndex, currentActivity: $alarmModel.activity)
                     }.padding(.vertical)
                     
                     GridRow {
@@ -45,7 +46,7 @@ struct WakeUp: View {
                     }
                     
                     GridRow {
-                        TimeOfDayIcon(date: alarmModel.start).font(.title)
+                        TimeOfDayIcon(date: alarmModel.end).font(.title)
                         VStack(alignment: .leading) {
                             TimePicker(time: $alarmModel.end, scale: 1.3)
                             GrayedText(text: "end   ")

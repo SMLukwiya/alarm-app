@@ -39,14 +39,14 @@ struct ToggleView: View {
     var body: some View {
         let dragGesture = DragGesture()
             .onChanged{gesture in
-                withAnimation(.easeIn(duration: 0.5)) {
+                withAnimation(.easeIn(duration: 0.2)) {
                     isOn = gesture.translation.width > 0 ? true : false
                 }
             }
         
         let tapGesture = TapGesture()
             .onEnded {_ in
-                withAnimation(.easeIn(duration: 0.5)) {
+                withAnimation(.easeIn(duration: 0.2)) {
                     isOn.toggle()
                 }
             }
