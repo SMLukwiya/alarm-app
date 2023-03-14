@@ -31,6 +31,8 @@
 		6F1CDD4529BEDE3700A2A23B /* ScreenConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1CDD4429BEDE3700A2A23B /* ScreenConstants.swift */; };
 		6F1CDD4729BEE14700A2A23B /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1CDD4629BEE14700A2A23B /* CustomButton.swift */; };
 		6F1CDD4929BF92C300A2A23B /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1CDD4829BF92C300A2A23B /* AboutView.swift */; };
+		6F1CDD4B29BF9A1A00A2A23B /* AddEditAlarmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1CDD4A29BF9A1A00A2A23B /* AddEditAlarmView.swift */; };
+		6F1CDD4D29C00F6400A2A23B /* YouDidIt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1CDD4C29C00F6400A2A23B /* YouDidIt.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +64,8 @@
 		6F1CDD4429BEDE3700A2A23B /* ScreenConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenConstants.swift; sourceTree = "<group>"; };
 		6F1CDD4629BEE14700A2A23B /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		6F1CDD4829BF92C300A2A23B /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		6F1CDD4A29BF9A1A00A2A23B /* AddEditAlarmView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEditAlarmView.swift; sourceTree = "<group>"; };
+		6F1CDD4C29C00F6400A2A23B /* YouDidIt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouDidIt.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,6 +199,7 @@
 			children = (
 				6F1CDD3429BEC12200A2A23B /* SplashScreen.swift */,
 				6F1CDD4829BF92C300A2A23B /* AboutView.swift */,
+				6F1CDD4A29BF9A1A00A2A23B /* AddEditAlarmView.swift */,
 			);
 			path = MainViews;
 			sourceTree = "<group>";
@@ -204,6 +209,7 @@
 			children = (
 				6F1CDD4029BED9E900A2A23B /* EnableNotifications.swift */,
 				6F1CDD4229BEDBB200A2A23B /* MainGradient.swift */,
+				6F1CDD4C29C00F6400A2A23B /* YouDidIt.swift */,
 			);
 			path = SubViews;
 			sourceTree = "<group>";
@@ -309,6 +315,7 @@
 				6F1CDD3729BEC45100A2A23B /* CoolSplashScreenComponent.swift in Sources */,
 				6F1CDD2F29BE058A00A2A23B /* AlarmModel.swift in Sources */,
 				6F1CDD1C29BDD05200A2A23B /* GrayedText.swift in Sources */,
+				6F1CDD4D29C00F6400A2A23B /* YouDidIt.swift in Sources */,
 				6F1CDD3329BE0DAF00A2A23B /* SoundConstants.swift in Sources */,
 				6F1CDD0329BDC6AA00A2A23B /* MainAlarmView.swift in Sources */,
 				6F1CDD3F29BED74700A2A23B /* ImageConstants.swift in Sources */,
@@ -319,6 +326,7 @@
 				6F1CDD4129BED9E900A2A23B /* EnableNotifications.swift in Sources */,
 				6F1CDD2529BDE92200A2A23B /* ColorConstants.swift in Sources */,
 				6F1CDD4929BF92C300A2A23B /* AboutView.swift in Sources */,
+				6F1CDD4B29BF9A1A00A2A23B /* AddEditAlarmView.swift in Sources */,
 				6F1CDD3129BE0BCF00A2A23B /* AcitivityConstants.swift in Sources */,
 				6F1CDD2729BDECAF00A2A23B /* TimeOfDayIcon.swift in Sources */,
 			);
