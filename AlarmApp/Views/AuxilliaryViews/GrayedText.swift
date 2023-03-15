@@ -6,7 +6,7 @@ struct GrayedText: View {
     var font: Font = .headline
     var body: some View {
         Text(text)
-            .foregroundColor(.gray)
+            .foregroundColor(lightGray)
             .font(font)
     }
 }

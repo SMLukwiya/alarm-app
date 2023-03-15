@@ -46,6 +46,7 @@
 		6F1CDD6429C0DC5100A2A23B /* CenterDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1CDD6329C0DC5100A2A23B /* CenterDatePicker.swift */; };
 		6F1CDD6629C0E3A200A2A23B /* TimeArc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1CDD6529C0E3A200A2A23B /* TimeArc.swift */; };
 		6F1CDD6829C15FDA00A2A23B /* CircularTimeIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1CDD6729C15FDA00A2A23B /* CircularTimeIcon.swift */; };
+		6F1CDD6A29C1660200A2A23B /* MainAddEditAlarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1CDD6929C1660200A2A23B /* MainAddEditAlarm.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -92,6 +93,7 @@
 		6F1CDD6329C0DC5100A2A23B /* CenterDatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterDatePicker.swift; sourceTree = "<group>"; };
 		6F1CDD6529C0E3A200A2A23B /* TimeArc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeArc.swift; sourceTree = "<group>"; };
 		6F1CDD6729C15FDA00A2A23B /* CircularTimeIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularTimeIcon.swift; sourceTree = "<group>"; };
+		6F1CDD6929C1660200A2A23B /* MainAddEditAlarm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAddEditAlarm.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -227,6 +229,7 @@
 				6F1CDD4829BF92C300A2A23B /* AboutView.swift */,
 				6F1CDD4A29BF9A1A00A2A23B /* AddEditAlarmView.swift */,
 				6F1CDD5A29C0A2F600A2A23B /* ListOfAlarms.swift */,
+				6F1CDD6929C1660200A2A23B /* MainAddEditAlarm.swift */,
 			);
 			path = MainViews;
 			sourceTree = "<group>";
@@ -385,6 +388,7 @@
 				6F1CDD4929BF92C300A2A23B /* AboutView.swift in Sources */,
 				6F1CDD5929C0672D00A2A23B /* SelectActivity.swift in Sources */,
 				6F1CDD4B29BF9A1A00A2A23B /* AddEditAlarmView.swift in Sources */,
+				6F1CDD6A29C1660200A2A23B /* MainAddEditAlarm.swift in Sources */,
 				6F1CDD6629C0E3A200A2A23B /* TimeArc.swift in Sources */,
 				6F1CDD3129BE0BCF00A2A23B /* AcitivityConstants.swift in Sources */,
 				6F1CDD2729BDECAF00A2A23B /* TimeOfDayIcon.swift in Sources */,

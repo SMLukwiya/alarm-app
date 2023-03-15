@@ -6,16 +6,19 @@ struct AddEditCircularAlarm: View {
     @State var alarmModel: AlarmModel
     
     var body: some View {
-        VStack {
-            CancelSaveAlarm(currentAlarmIndex: currentAlarmIndex, alarmModel: $alarmModel)
-            
-            AlarmToggleView(alarmEnabled: $alarmModel.alarmEnabled)
-            Divider()
-            Spacer()
-            
-            CircularTime(currentAlarmIndex: currentAlarmIndex, alarmModel:  alarmModel, size: screenWidth/2 )
-            Spacer()
-        }       
+        ZStack {
+            black.ignoresSafeArea()
+            VStack {
+                CancelSaveAlarm(currentAlarmIndex: currentAlarmIndex, alarmModel: $alarmModel).foregroundColor(white)
+                
+                AlarmToggleView(alarmEnabled: $alarmModel.alarmEnabled)
+                Divider()
+                Spacer()
+                
+                CircularTime(currentAlarmIndex: currentAlarmIndex, alarmModel:  alarmModel, size: screenWidth/2 )
+                Spacer()
+            }.padding()
+        }
     }
 }
 

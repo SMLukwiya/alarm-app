@@ -55,7 +55,7 @@ struct AlarmModel: Identifiable {
                        start: Date(),
                        end: addTimeToDate(date: Date(), hours: 4, minutes: 30),
                        activity: "moon.zzz.fill",
-                       colorIndex: 0
+                       colorIndex: 1
             )
         ].sorted(by: {$0.endTime < $1.endTime})
     }

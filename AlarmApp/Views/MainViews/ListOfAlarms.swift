@@ -12,7 +12,7 @@ struct ListOfAlarms: View {
                         let model = alarmListModels[0]
                         
                         NavigationLink(destination: {
-                            AddEditAlarmView(currentAlarmIndex: i, alarmModel: model)
+                            MainAddEditAlarm(currentAlarmIndex: i, alarmModel: .DefaultAlarm())
                         }, label: {
                             AlarmRow(model: model, i: 0)
                         })
@@ -23,7 +23,7 @@ struct ListOfAlarms: View {
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     NavigationLink(destination: {
-                        AddEditAlarmView(currentAlarmIndex: nil, alarmModel: .DefaultAlarm())
+                        MainAddEditAlarm(currentAlarmIndex: nil, alarmModel: .DefaultAlarm())
                     }, label: {
                         Text("+")
                             .font(.largeTitle)

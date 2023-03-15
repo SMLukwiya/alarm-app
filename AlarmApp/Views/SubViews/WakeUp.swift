@@ -7,7 +7,7 @@ struct WakeUp: View {
     
     var body: some View {
         VStack {
-            CancelSaveAlarm(currentAlarmIndex: currentAlarmIndex, alarmModel: $alarmModel)
+            CancelSaveAlarm(currentAlarmIndex: currentAlarmIndex, alarmModel: $alarmModel).foregroundColor(white)
             
             AlarmToggleView(alarmEnabled: $alarmModel.alarmEnabled)
             
@@ -49,18 +49,18 @@ struct WakeUp: View {
                         TimeOfDayIcon(date: alarmModel.end).font(.title)
                         VStack(alignment: .leading) {
                             TimePicker(time: $alarmModel.end, scale: 1.3)
-                            GrayedText(text: "end   ")
+                            GrayedText(text: "end")
                         }
                     }
                     
                     GridRow {
                         Text("")
                         HStack {
-                            Text("Sound").fontWeight(.semibold)
-                            Text(alarmModel.sound.rawValue).font(.caption).fontWeight(.thin)
+                            Text("Sound").fontWeight(.semibold).foregroundColor(white)
+                            Text(alarmModel.sound.rawValue).font(.caption).fontWeight(.thin).foregroundColor(white)
                         }
                         .padding(7)
-                        .overlay(Capsule().stroke())
+                        .overlay(Capsule().stroke().fill(white))
                         .contextMenu {
                             ForEach(Sounds.allCases, id: \.self) { sound in
                                 Button(action: {
@@ -73,7 +73,7 @@ struct WakeUp: View {
                     }
                 }.frame(maxWidth: .infinity, alignment: .leading)
             }.padding()
-        }.padding().background(cardBackgroundColor.cornerRadius(20  ))
+        }.padding().background(darkGray.cornerRadius(20))
     }
 }
 

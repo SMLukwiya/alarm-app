@@ -8,7 +8,7 @@ struct AddEditAlarmView: View {
     
     var body: some View {
         ZStack {
-            backgroundColor.opacity(0.3).ignoresSafeArea()
+            black.ignoresSafeArea()
             
             VStack {
                 if showYouDidItView {
