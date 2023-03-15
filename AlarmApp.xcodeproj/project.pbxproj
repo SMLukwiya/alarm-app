@@ -44,6 +44,8 @@
 		6F1CDD5F29C0B82500A2A23B /* AddEditCircularAlarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1CDD5E29C0B82500A2A23B /* AddEditCircularAlarm.swift */; };
 		6F1CDD6129C0BABB00A2A23B /* CircularTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1CDD6029C0BABB00A2A23B /* CircularTime.swift */; };
 		6F1CDD6429C0DC5100A2A23B /* CenterDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1CDD6329C0DC5100A2A23B /* CenterDatePicker.swift */; };
+		6F1CDD6629C0E3A200A2A23B /* TimeArc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1CDD6529C0E3A200A2A23B /* TimeArc.swift */; };
+		6F1CDD6829C15FDA00A2A23B /* CircularTimeIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1CDD6729C15FDA00A2A23B /* CircularTimeIcon.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -88,6 +90,8 @@
 		6F1CDD5E29C0B82500A2A23B /* AddEditCircularAlarm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEditCircularAlarm.swift; sourceTree = "<group>"; };
 		6F1CDD6029C0BABB00A2A23B /* CircularTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularTime.swift; sourceTree = "<group>"; };
 		6F1CDD6329C0DC5100A2A23B /* CenterDatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterDatePicker.swift; sourceTree = "<group>"; };
+		6F1CDD6529C0E3A200A2A23B /* TimeArc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeArc.swift; sourceTree = "<group>"; };
+		6F1CDD6729C15FDA00A2A23B /* CircularTimeIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularTimeIcon.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -270,6 +274,8 @@
 			children = (
 				6F1CDD6029C0BABB00A2A23B /* CircularTime.swift */,
 				6F1CDD6329C0DC5100A2A23B /* CenterDatePicker.swift */,
+				6F1CDD6529C0E3A200A2A23B /* TimeArc.swift */,
+				6F1CDD6729C15FDA00A2A23B /* CircularTimeIcon.swift */,
 			);
 			path = CircularTimeView;
 			sourceTree = "<group>";
@@ -363,6 +369,7 @@
 				6F1CDD1C29BDD05200A2A23B /* GrayedText.swift in Sources */,
 				6F1CDD5B29C0A2F600A2A23B /* ListOfAlarms.swift in Sources */,
 				6F1CDD5729C0643200A2A23B /* TimePicker.swift in Sources */,
+				6F1CDD6829C15FDA00A2A23B /* CircularTimeIcon.swift in Sources */,
 				6F1CDD4D29C00F6400A2A23B /* YouDidIt.swift in Sources */,
 				6F1CDD3329BE0DAF00A2A23B /* SoundConstants.swift in Sources */,
 				6F1CDD0329BDC6AA00A2A23B /* MainAlarmView.swift in Sources */,
@@ -378,6 +385,7 @@
 				6F1CDD4929BF92C300A2A23B /* AboutView.swift in Sources */,
 				6F1CDD5929C0672D00A2A23B /* SelectActivity.swift in Sources */,
 				6F1CDD4B29BF9A1A00A2A23B /* AddEditAlarmView.swift in Sources */,
+				6F1CDD6629C0E3A200A2A23B /* TimeArc.swift in Sources */,
 				6F1CDD3129BE0BCF00A2A23B /* AcitivityConstants.swift in Sources */,
 				6F1CDD2729BDECAF00A2A23B /* TimeOfDayIcon.swift in Sources */,
 				6F1CDD6429C0DC5100A2A23B /* CenterDatePicker.swift in Sources */,

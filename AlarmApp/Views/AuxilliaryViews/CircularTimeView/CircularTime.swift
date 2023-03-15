@@ -6,11 +6,55 @@ struct CircularTime: View {
     @State var alarmModel: AlarmModel
     let size: CGFloat
     
+    var startTime: Date {
+        alarmModel.start
+    }
+    
+    var endTime: Date {
+        alarmModel.end
+    }
+    
+    var startDateToPercent: CGFloat {
+        dateToPercent(date: startTime)
+    }
+    
+    var endDateToPercent: CGFloat {
+        startDateToPercent + percentDifference
+    }
+    
+    var percentDifference: CGFloat {
+        let value = dateToPercent(date: endTime) - dateToPercent(date: startTime)
+        //value can be a negative
+        return value >= 0 ? value : 1 + value
+    }
+    
+    var rotateCircleOffset: CGFloat {
+        // create the arc
+        360 * startDateToPercent
+    }
+    
     var body: some View {
-        Circle()
-            .stroke(lineWidth: 20)
-            .frame(width: size)
-            .overlay(Text("Circular"))
+        ZStack {
+            CenterDatePicker(size: size, alarmModel: $alarmModel)
+            
+            // progression
+            TimeArc(percentDifference: percentDifference,
+                    strokeStyle: StrokeStyle(lineWidth: 15, lineCap: .round, lineJoin: .round),
+                    size: size,
+                    rotateCircleOffset: rotateCircleOffset, color: pink)
+            // progression overlay
+            TimeArc(percentDifference: percentDifference,
+                    strokeStyle: StrokeStyle(lineWidth: 15, dash: [1,2]),
+                    size: size,
+                    rotateCircleOffset: rotateCircleOffset, color: .gray)
+            
+            // First Icon
+            CircularTimeIcon(time: startTime, size: size, percent: startDateToPercent)
+            
+            //Second Icon
+            CircularTimeIcon(time: endTime, size: size, percent: endDateToPercent)
+            
+        }
     }
 }
 
