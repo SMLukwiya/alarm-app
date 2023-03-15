@@ -2,6 +2,8 @@
 import SwiftUI
 
 struct EnableNotifications: View {
+    @EnvironmentObject var lnManager: LocalNotificationsManager
+    
     var body: some View {
         ZStack {
             CoolSplashScreenComponent()
@@ -13,7 +15,7 @@ struct EnableNotifications: View {
                 Spacer()
                 
                 Button(action: {
-                    
+                    lnManager.openSettings()
                 }, label: {
                     CustomButton(text: LocalizedStringKey("Enable")).padding()  
                 })
@@ -24,6 +26,6 @@ struct EnableNotifications: View {
 
 struct EnableNotifications_Previews: PreviewProvider {
     static var previews: some View {
-        EnableNotifications()
+        EnableNotifications().environmentObject(LocalNotificationsManager() )
     }
 }

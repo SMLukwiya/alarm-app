@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6F1CDD0129BDC6AA00A2A23B /* AlarmAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1CDD0029BDC6AA00A2A23B /* AlarmAppApp.swift */; };
+		6F1CDD0129BDC6AA00A2A23B /* AlarmApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1CDD0029BDC6AA00A2A23B /* AlarmApp.swift */; };
 		6F1CDD0329BDC6AA00A2A23B /* MainAlarmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1CDD0229BDC6AA00A2A23B /* MainAlarmView.swift */; };
 		6F1CDD0529BDC6AB00A2A23B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F1CDD0429BDC6AB00A2A23B /* Assets.xcassets */; };
 		6F1CDD0929BDC6AB00A2A23B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F1CDD0829BDC6AB00A2A23B /* Preview Assets.xcassets */; };
@@ -48,11 +48,19 @@
 		6F1CDD6829C15FDA00A2A23B /* CircularTimeIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1CDD6729C15FDA00A2A23B /* CircularTimeIcon.swift */; };
 		6F1CDD6A29C1660200A2A23B /* MainAddEditAlarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1CDD6929C1660200A2A23B /* MainAddEditAlarm.swift */; };
 		6F1CDD6C29C1E63D00A2A23B /* SelectActivityViewExpanded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1CDD6B29C1E63D00A2A23B /* SelectActivityViewExpanded.swift */; };
+		6F1CDD6E29C1F63000A2A23B /* LocalNotificationsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1CDD6D29C1F63000A2A23B /* LocalNotificationsManager.swift */; };
+		6F1CDD7629C2285800A2A23B /* trap-loop-2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6F1CDD6F29C2285700A2A23B /* trap-loop-2.mp3 */; };
+		6F1CDD7729C2285800A2A23B /* soft-piano.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6F1CDD7029C2285800A2A23B /* soft-piano.mp3 */; };
+		6F1CDD7829C2285800A2A23B /* trap-loop.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6F1CDD7129C2285800A2A23B /* trap-loop.mp3 */; };
+		6F1CDD7929C2285800A2A23B /* drumbit-1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6F1CDD7229C2285800A2A23B /* drumbit-1.mp3 */; };
+		6F1CDD7A29C2285800A2A23B /* smooth-guitar-1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6F1CDD7329C2285800A2A23B /* smooth-guitar-1.mp3 */; };
+		6F1CDD7B29C2285800A2A23B /* witchy-cackle.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6F1CDD7429C2285800A2A23B /* witchy-cackle.mp3 */; };
+		6F1CDD7C29C2285800A2A23B /* acoustic-guitar-1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6F1CDD7529C2285800A2A23B /* acoustic-guitar-1.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6F1CDCFD29BDC6AA00A2A23B /* AlarmApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlarmApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		6F1CDD0029BDC6AA00A2A23B /* AlarmAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmAppApp.swift; sourceTree = "<group>"; };
+		6F1CDD0029BDC6AA00A2A23B /* AlarmApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmApp.swift; sourceTree = "<group>"; };
 		6F1CDD0229BDC6AA00A2A23B /* MainAlarmView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAlarmView.swift; sourceTree = "<group>"; };
 		6F1CDD0429BDC6AB00A2A23B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6F1CDD0629BDC6AB00A2A23B /* AlarmApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AlarmApp.entitlements; sourceTree = "<group>"; };
@@ -96,6 +104,14 @@
 		6F1CDD6729C15FDA00A2A23B /* CircularTimeIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularTimeIcon.swift; sourceTree = "<group>"; };
 		6F1CDD6929C1660200A2A23B /* MainAddEditAlarm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAddEditAlarm.swift; sourceTree = "<group>"; };
 		6F1CDD6B29C1E63D00A2A23B /* SelectActivityViewExpanded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectActivityViewExpanded.swift; sourceTree = "<group>"; };
+		6F1CDD6D29C1F63000A2A23B /* LocalNotificationsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotificationsManager.swift; sourceTree = "<group>"; };
+		6F1CDD6F29C2285700A2A23B /* trap-loop-2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "trap-loop-2.mp3"; sourceTree = "<group>"; };
+		6F1CDD7029C2285800A2A23B /* soft-piano.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "soft-piano.mp3"; sourceTree = "<group>"; };
+		6F1CDD7129C2285800A2A23B /* trap-loop.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "trap-loop.mp3"; sourceTree = "<group>"; };
+		6F1CDD7229C2285800A2A23B /* drumbit-1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "drumbit-1.mp3"; sourceTree = "<group>"; };
+		6F1CDD7329C2285800A2A23B /* smooth-guitar-1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "smooth-guitar-1.mp3"; sourceTree = "<group>"; };
+		6F1CDD7429C2285800A2A23B /* witchy-cackle.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "witchy-cackle.mp3"; sourceTree = "<group>"; };
+		6F1CDD7529C2285800A2A23B /* acoustic-guitar-1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "acoustic-guitar-1.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,7 +152,7 @@
 				6F1CDD1129BDCB4B00A2A23B /* ViewModel */,
 				6F1CDD1029BDCB4000A2A23B /* Views */,
 				6F1CDD0F29BDCB3000A2A23B /* Models */,
-				6F1CDD0029BDC6AA00A2A23B /* AlarmAppApp.swift */,
+				6F1CDD0029BDC6AA00A2A23B /* AlarmApp.swift */,
 				6F1CDD0229BDC6AA00A2A23B /* MainAlarmView.swift */,
 				6F1CDD0429BDC6AB00A2A23B /* Assets.xcassets */,
 				6F1CDD0629BDC6AB00A2A23B /* AlarmApp.entitlements */,
@@ -204,6 +220,13 @@
 		6F1CDD1429BDCC7600A2A23B /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
+				6F1CDD7529C2285800A2A23B /* acoustic-guitar-1.mp3 */,
+				6F1CDD7229C2285800A2A23B /* drumbit-1.mp3 */,
+				6F1CDD7329C2285800A2A23B /* smooth-guitar-1.mp3 */,
+				6F1CDD7029C2285800A2A23B /* soft-piano.mp3 */,
+				6F1CDD7129C2285800A2A23B /* trap-loop.mp3 */,
+				6F1CDD6F29C2285700A2A23B /* trap-loop-2.mp3 */,
+				6F1CDD7429C2285800A2A23B /* witchy-cackle.mp3 */,
 				6F1CDD3229BE0DAF00A2A23B /* SoundConstants.swift */,
 			);
 			path = Sounds;
@@ -212,6 +235,7 @@
 		6F1CDD1529BDCC8A00A2A23B /* Local Notifications */ = {
 			isa = PBXGroup;
 			children = (
+				6F1CDD6D29C1F63000A2A23B /* LocalNotificationsManager.swift */,
 			);
 			path = "Local Notifications";
 			sourceTree = "<group>";
@@ -346,11 +370,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F1CDD7629C2285800A2A23B /* trap-loop-2.mp3 in Resources */,
 				6F1CDD0929BDC6AB00A2A23B /* Preview Assets.xcassets in Resources */,
+				6F1CDD7729C2285800A2A23B /* soft-piano.mp3 in Resources */,
 				6F1CDD1F29BDD7A100A2A23B /* Localizable.strings in Resources */,
+				6F1CDD7A29C2285800A2A23B /* smooth-guitar-1.mp3 in Resources */,
+				6F1CDD7929C2285800A2A23B /* drumbit-1.mp3 in Resources */,
 				6F1CDD0529BDC6AB00A2A23B /* Assets.xcassets in Resources */,
+				6F1CDD7829C2285800A2A23B /* trap-loop.mp3 in Resources */,
 				6F1CDD3B29BECF8F00A2A23B /* WorkSans-VariableFont_wght.ttf in Resources */,
+				6F1CDD7C29C2285800A2A23B /* acoustic-guitar-1.mp3 in Resources */,
 				6F1CDD3A29BECF8F00A2A23B /* WorkSans-Italic-VariableFont_wght.ttf in Resources */,
+				6F1CDD7B29C2285800A2A23B /* witchy-cackle.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,6 +401,7 @@
 				6F1CDD4729BEE14700A2A23B /* CustomButton.swift in Sources */,
 				6F1CDD2B29BDED1900A2A23B /* TimeAndDateUtils.swift in Sources */,
 				6F1CDD3729BEC45100A2A23B /* CoolSplashScreenComponent.swift in Sources */,
+				6F1CDD6E29C1F63000A2A23B /* LocalNotificationsManager.swift in Sources */,
 				6F1CDD2F29BE058A00A2A23B /* AlarmModel.swift in Sources */,
 				6F1CDD6129C0BABB00A2A23B /* CircularTime.swift in Sources */,
 				6F1CDD1C29BDD05200A2A23B /* GrayedText.swift in Sources */,
@@ -385,7 +417,7 @@
 				6F1CDD5F29C0B82500A2A23B /* AddEditCircularAlarm.swift in Sources */,
 				6F1CDD2D29BDFE2E00A2A23B /* TimeModel.swift in Sources */,
 				6F1CDD3529BEC12200A2A23B /* SplashScreen.swift in Sources */,
-				6F1CDD0129BDC6AA00A2A23B /* AlarmAppApp.swift in Sources */,
+				6F1CDD0129BDC6AA00A2A23B /* AlarmApp.swift in Sources */,
 				6F1CDD4129BED9E900A2A23B /* EnableNotifications.swift in Sources */,
 				6F1CDD2529BDE92200A2A23B /* ColorConstants.swift in Sources */,
 				6F1CDD5129C01C9F00A2A23B /* CancelSaveAlarm.swift in Sources */,

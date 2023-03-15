@@ -6,7 +6,7 @@ struct CustomButton: View {
     
     var body: some View {
         Text(text)
-            .foregroundColor(black)
+            .foregroundColor(white)
             .fontWeight(.semibold)
             .padding()
             .frame(maxWidth: .infinity)
