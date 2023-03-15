@@ -49,13 +49,13 @@
 		6F1CDD6A29C1660200A2A23B /* MainAddEditAlarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1CDD6929C1660200A2A23B /* MainAddEditAlarm.swift */; };
 		6F1CDD6C29C1E63D00A2A23B /* SelectActivityViewExpanded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1CDD6B29C1E63D00A2A23B /* SelectActivityViewExpanded.swift */; };
 		6F1CDD6E29C1F63000A2A23B /* LocalNotificationsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1CDD6D29C1F63000A2A23B /* LocalNotificationsManager.swift */; };
-		6F1CDD7629C2285800A2A23B /* trap-loop-2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6F1CDD6F29C2285700A2A23B /* trap-loop-2.mp3 */; };
+		6F1CDD7629C2285800A2A23B /* trap-loop-1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6F1CDD6F29C2285700A2A23B /* trap-loop-1.mp3 */; };
 		6F1CDD7729C2285800A2A23B /* soft-piano.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6F1CDD7029C2285800A2A23B /* soft-piano.mp3 */; };
 		6F1CDD7829C2285800A2A23B /* trap-loop.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6F1CDD7129C2285800A2A23B /* trap-loop.mp3 */; };
-		6F1CDD7929C2285800A2A23B /* drumbit-1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6F1CDD7229C2285800A2A23B /* drumbit-1.mp3 */; };
-		6F1CDD7A29C2285800A2A23B /* smooth-guitar-1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6F1CDD7329C2285800A2A23B /* smooth-guitar-1.mp3 */; };
+		6F1CDD7929C2285800A2A23B /* drumbit.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6F1CDD7229C2285800A2A23B /* drumbit.mp3 */; };
+		6F1CDD7A29C2285800A2A23B /* smooth-guitar.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6F1CDD7329C2285800A2A23B /* smooth-guitar.mp3 */; };
 		6F1CDD7B29C2285800A2A23B /* witchy-cackle.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6F1CDD7429C2285800A2A23B /* witchy-cackle.mp3 */; };
-		6F1CDD7C29C2285800A2A23B /* acoustic-guitar-1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6F1CDD7529C2285800A2A23B /* acoustic-guitar-1.mp3 */; };
+		6F1CDD7C29C2285800A2A23B /* acoustic-guitar.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6F1CDD7529C2285800A2A23B /* acoustic-guitar.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -105,13 +105,13 @@
 		6F1CDD6929C1660200A2A23B /* MainAddEditAlarm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAddEditAlarm.swift; sourceTree = "<group>"; };
 		6F1CDD6B29C1E63D00A2A23B /* SelectActivityViewExpanded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectActivityViewExpanded.swift; sourceTree = "<group>"; };
 		6F1CDD6D29C1F63000A2A23B /* LocalNotificationsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotificationsManager.swift; sourceTree = "<group>"; };
-		6F1CDD6F29C2285700A2A23B /* trap-loop-2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "trap-loop-2.mp3"; sourceTree = "<group>"; };
+		6F1CDD6F29C2285700A2A23B /* trap-loop-1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "trap-loop-1.mp3"; sourceTree = "<group>"; };
 		6F1CDD7029C2285800A2A23B /* soft-piano.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "soft-piano.mp3"; sourceTree = "<group>"; };
 		6F1CDD7129C2285800A2A23B /* trap-loop.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "trap-loop.mp3"; sourceTree = "<group>"; };
-		6F1CDD7229C2285800A2A23B /* drumbit-1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "drumbit-1.mp3"; sourceTree = "<group>"; };
-		6F1CDD7329C2285800A2A23B /* smooth-guitar-1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "smooth-guitar-1.mp3"; sourceTree = "<group>"; };
+		6F1CDD7229C2285800A2A23B /* drumbit.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = drumbit.mp3; sourceTree = "<group>"; };
+		6F1CDD7329C2285800A2A23B /* smooth-guitar.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "smooth-guitar.mp3"; sourceTree = "<group>"; };
 		6F1CDD7429C2285800A2A23B /* witchy-cackle.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "witchy-cackle.mp3"; sourceTree = "<group>"; };
-		6F1CDD7529C2285800A2A23B /* acoustic-guitar-1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "acoustic-guitar-1.mp3"; sourceTree = "<group>"; };
+		6F1CDD7529C2285800A2A23B /* acoustic-guitar.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "acoustic-guitar.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -220,12 +220,12 @@
 		6F1CDD1429BDCC7600A2A23B /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
-				6F1CDD7529C2285800A2A23B /* acoustic-guitar-1.mp3 */,
-				6F1CDD7229C2285800A2A23B /* drumbit-1.mp3 */,
-				6F1CDD7329C2285800A2A23B /* smooth-guitar-1.mp3 */,
+				6F1CDD7529C2285800A2A23B /* acoustic-guitar.mp3 */,
+				6F1CDD7329C2285800A2A23B /* smooth-guitar.mp3 */,
+				6F1CDD7229C2285800A2A23B /* drumbit.mp3 */,
 				6F1CDD7029C2285800A2A23B /* soft-piano.mp3 */,
 				6F1CDD7129C2285800A2A23B /* trap-loop.mp3 */,
-				6F1CDD6F29C2285700A2A23B /* trap-loop-2.mp3 */,
+				6F1CDD6F29C2285700A2A23B /* trap-loop-1.mp3 */,
 				6F1CDD7429C2285800A2A23B /* witchy-cackle.mp3 */,
 				6F1CDD3229BE0DAF00A2A23B /* SoundConstants.swift */,
 			);
@@ -370,16 +370,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6F1CDD7629C2285800A2A23B /* trap-loop-2.mp3 in Resources */,
+				6F1CDD7629C2285800A2A23B /* trap-loop-1.mp3 in Resources */,
 				6F1CDD0929BDC6AB00A2A23B /* Preview Assets.xcassets in Resources */,
 				6F1CDD7729C2285800A2A23B /* soft-piano.mp3 in Resources */,
 				6F1CDD1F29BDD7A100A2A23B /* Localizable.strings in Resources */,
-				6F1CDD7A29C2285800A2A23B /* smooth-guitar-1.mp3 in Resources */,
-				6F1CDD7929C2285800A2A23B /* drumbit-1.mp3 in Resources */,
+				6F1CDD7A29C2285800A2A23B /* smooth-guitar.mp3 in Resources */,
+				6F1CDD7929C2285800A2A23B /* drumbit.mp3 in Resources */,
 				6F1CDD0529BDC6AB00A2A23B /* Assets.xcassets in Resources */,
 				6F1CDD7829C2285800A2A23B /* trap-loop.mp3 in Resources */,
 				6F1CDD3B29BECF8F00A2A23B /* WorkSans-VariableFont_wght.ttf in Resources */,
-				6F1CDD7C29C2285800A2A23B /* acoustic-guitar-1.mp3 in Resources */,
+				6F1CDD7C29C2285800A2A23B /* acoustic-guitar.mp3 in Resources */,
 				6F1CDD3A29BECF8F00A2A23B /* WorkSans-Italic-VariableFont_wght.ttf in Resources */,
 				6F1CDD7B29C2285800A2A23B /* witchy-cackle.mp3 in Resources */,
 			);
