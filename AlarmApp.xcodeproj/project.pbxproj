@@ -56,6 +56,8 @@
 		6F1CDD7A29C2285800A2A23B /* smooth-guitar.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6F1CDD7329C2285800A2A23B /* smooth-guitar.mp3 */; };
 		6F1CDD7B29C2285800A2A23B /* witchy-cackle.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6F1CDD7429C2285800A2A23B /* witchy-cackle.mp3 */; };
 		6F1CDD7C29C2285800A2A23B /* acoustic-guitar.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6F1CDD7529C2285800A2A23B /* acoustic-guitar.mp3 */; };
+		6F1CDD7E29C237D400A2A23B /* PlaySound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1CDD7D29C237D400A2A23B /* PlaySound.swift */; };
+		6F1CDD8029C2406700A2A23B /* SoundMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1CDD7F29C2406700A2A23B /* SoundMenuView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -112,6 +114,8 @@
 		6F1CDD7329C2285800A2A23B /* smooth-guitar.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "smooth-guitar.mp3"; sourceTree = "<group>"; };
 		6F1CDD7429C2285800A2A23B /* witchy-cackle.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "witchy-cackle.mp3"; sourceTree = "<group>"; };
 		6F1CDD7529C2285800A2A23B /* acoustic-guitar.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "acoustic-guitar.mp3"; sourceTree = "<group>"; };
+		6F1CDD7D29C237D400A2A23B /* PlaySound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaySound.swift; sourceTree = "<group>"; };
+		6F1CDD7F29C2406700A2A23B /* SoundMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundMenuView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -228,6 +232,7 @@
 				6F1CDD6F29C2285700A2A23B /* trap-loop-1.mp3 */,
 				6F1CDD7429C2285800A2A23B /* witchy-cackle.mp3 */,
 				6F1CDD3229BE0DAF00A2A23B /* SoundConstants.swift */,
+				6F1CDD7D29C237D400A2A23B /* PlaySound.swift */,
 			);
 			path = Sounds;
 			sourceTree = "<group>";
@@ -288,6 +293,7 @@
 				6F1CDD5829C0672D00A2A23B /* SelectActivity.swift */,
 				6F1CDD5C29C0AD8000A2A23B /* AlarmRow.swift */,
 				6F1CDD6B29C1E63D00A2A23B /* SelectActivityViewExpanded.swift */,
+				6F1CDD7F29C2406700A2A23B /* SoundMenuView.swift */,
 			);
 			path = AuxilliaryViews;
 			sourceTree = "<group>";
@@ -393,6 +399,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6F1CDD4F29C0150400A2A23B /* WakeUp.swift in Sources */,
+				6F1CDD8029C2406700A2A23B /* SoundMenuView.swift in Sources */,
 				6F1CDD5D29C0AD8000A2A23B /* AlarmRow.swift in Sources */,
 				6F1CDD4329BEDBB200A2A23B /* MainGradient.swift in Sources */,
 				6F1CDD3D29BED05B00A2A23B /* CustomText.swift in Sources */,
@@ -411,6 +418,7 @@
 				6F1CDD6829C15FDA00A2A23B /* CircularTimeIcon.swift in Sources */,
 				6F1CDD4D29C00F6400A2A23B /* YouDidIt.swift in Sources */,
 				6F1CDD3329BE0DAF00A2A23B /* SoundConstants.swift in Sources */,
+				6F1CDD7E29C237D400A2A23B /* PlaySound.swift in Sources */,
 				6F1CDD0329BDC6AA00A2A23B /* MainAlarmView.swift in Sources */,
 				6F1CDD3F29BED74700A2A23B /* ImageConstants.swift in Sources */,
 				6F1CDD4529BEDE3700A2A23B /* ScreenConstants.swift in Sources */,
