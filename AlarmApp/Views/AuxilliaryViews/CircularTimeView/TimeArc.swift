@@ -25,6 +25,6 @@ struct TimeArc_Previews: PreviewProvider {
                 strokeStyle: StrokeStyle(lineWidth: 15, dash: [1,2]),
                 size: 200,
                 rotateCircleOffset: 30,
-                color: lightGray)
+                color: darkGray)
     }
 }

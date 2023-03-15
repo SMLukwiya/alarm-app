@@ -55,21 +55,22 @@ struct WakeUp: View {
                     
                     GridRow {
                         Text("")
-                        HStack {
-                            Text("Sound").fontWeight(.semibold).foregroundColor(white)
-                            Text(alarmModel.sound.rawValue).font(.caption).fontWeight(.thin).foregroundColor(white)
-                        }
-                        .padding(7)
-                        .overlay(Capsule().stroke().fill(white))
-                        .contextMenu {
+                        Menu(content: {
                             ForEach(Sounds.allCases, id: \.self) { sound in
                                 Button(action: {
                                     alarmModel.sound = sound
                                 }, label: {
                                     Text(sound.rawValue)
                                 })
-                            }.padding(.vertical )
-                        }
+                            }.padding(.vertical)
+                        }, label: {
+                            HStack {
+                                Text("Sound").fontWeight(.semibold).foregroundColor(white)
+                                Text(alarmModel.sound.rawValue).font(.caption).fontWeight(.thin).foregroundColor(white)
+                            }
+                            .padding(7)
+                            .overlay(Capsule().stroke().fill(white))
+                        })
                     }
                 }.frame(maxWidth: .infinity, alignment: .leading)
             }.padding()

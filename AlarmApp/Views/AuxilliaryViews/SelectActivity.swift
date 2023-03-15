@@ -14,7 +14,7 @@ struct SelectActivity: View {
     }
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
-            HStack {
+            HStack(spacing: 25) {
                 ForEach(activities, id: \.self) { activity in
                     let selectedActivity = activity == currentActivity
                     

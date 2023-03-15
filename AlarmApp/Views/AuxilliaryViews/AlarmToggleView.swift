@@ -6,7 +6,7 @@ struct AlarmToggleView: View {
     
     var body: some View {
         HStack {
-            GrayedText(text: "toggle")
+            GrayedText(text: "toggle", color: lightGray)
             Spacer( )
             ToggleView(isOn: $alarmEnabled)
         }

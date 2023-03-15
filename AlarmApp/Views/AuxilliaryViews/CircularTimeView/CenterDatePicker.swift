@@ -5,6 +5,7 @@ struct CenterDatePicker: View {
     let size: CGFloat
     @Binding var alarmModel: AlarmModel
     var lineWidth: CGFloat = 10.0
+
     
     var body: some View {
         Circle()
@@ -13,15 +14,15 @@ struct CenterDatePicker: View {
             .overlay(
                 VStack {
                     VStack {
-                        GrayedText(text: "start", font: .caption)
+                        GrayedText(text: "start", font: .caption, color: lightGray)
                         TimePicker(time: $alarmModel.start.animation(), scale: 1)
                     }
                     Spacer()
-                    GrayedText(text: "set alarm")
+                    GrayedText(text: "set alarm", color: lightGray)
                     Spacer()
                     VStack {
                         TimePicker(time: $alarmModel.end.animation(), scale: 1)
-                        GrayedText(text: "end", font: .caption)
+                        GrayedText(text: "end", font: .caption, color: lightGray)
                     }
                 }.padding().padding(.vertical)
             )

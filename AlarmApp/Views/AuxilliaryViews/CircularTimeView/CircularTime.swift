@@ -54,7 +54,7 @@ struct CircularTime: View {
             //Second Icon
             CircularTimeIcon(time: endTime, size: size, percent: endDateToPercent)
             
-        }
+        }.padding(50).background(darkGray).cornerRadius(25)
     }
 }
 
