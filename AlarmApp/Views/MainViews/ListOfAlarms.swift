@@ -2,21 +2,22 @@
 import SwiftUI
 
 struct ListOfAlarms: View {
-    var alarmListModels: [AlarmModel]
+    @EnvironmentObject var lnManager: LocalNotificationsManager
+    @State var isActive = false
+    @State var currentIndex: Int? = nil
     
     var body: some View {
         NavigationStack {
             ZStack {
                 List {
-                    ForEach(0..<5) { i in
-                        let model = alarmListModels[0]
-                        
-                        NavigationLink(destination: {
-                            MainAddEditAlarm(currentAlarmIndex: i, alarmModel: .DefaultAlarm())
+                    ForEach(lnManager.alarmModels.indices) { i in
+                        Button(action: {
+                            currentIndex = i
                         }, label: {
-                            AlarmRow(model: model, i: 0)
+                            AlarmRow(model: lnManager.alarmModels[i], i: i)
                         })
                     }
+                    .onDelete(perform: delete)
                 }
             }
             .navigationTitle("Alarm List")
@@ -37,10 +38,20 @@ struct ListOfAlarms: View {
             }
         }
     }
+    
+    func delete(offsets: IndexSet) {
+        // Remove from list of pending alarms
+        for index in offsets {
+            
+        }
+        
+        // remove from alarmModels
+        lnManager.alarmModels.remove(atOffsets: offsets)
+    }
 }
 
 struct ListOfAlarms_Previews: PreviewProvider {
     static var previews: some View {
-        ListOfAlarms(alarmListModels: AlarmModel.DummyAlarmData())
+        ListOfAlarms().environmentObject(LocalNotificationsManager())
     }
 }

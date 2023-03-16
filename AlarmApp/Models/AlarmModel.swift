@@ -31,6 +31,10 @@ struct AlarmModel: Identifiable, Codable {
         gradientColors[colorIndex]
     }
     
+    var endDateComponents: DateComponents {
+        Calendar.current.dateComponents([.hour, .minute], from: self.end)
+    }
+    
     static func DefaultAlarm() -> AlarmModel {
         AlarmModel(title: "Activity",
                    body: "Seek and you shall find",

@@ -10,7 +10,7 @@ struct MainAlarmView: View {
     var body: some View {
         TabView {
             if lnManager.isAuthorized {
-                ListOfAlarms(alarmListModels: AlarmModel.DummyAlarmData())
+                ListOfAlarms()
                     .tabItem({
                         Label("", systemImage: "alarm.fill")
                     })

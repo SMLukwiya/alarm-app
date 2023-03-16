@@ -66,4 +66,33 @@ class LocalNotificationsManager: NSObject, ObservableObject, UNUserNotificationC
     func getPendingAlarms() async {
         pendingAlarms = await notificationCenter.pendingNotificationRequests()
     }
+    
+    func schedule(localNotification: AlarmModel) async {
+        let content = UNMutableNotificationContent()
+        content.body = NSLocalizedString(localNotification.body, comment: "")
+        content.sound = customSound(soundName: localNotification.sound)
+        
+        let dateCompponents = localNotification.endDateComponents
+        let trigger = UNCalendarNotificationTrigger(dateMatching: dateCompponents, repeats: localNotification.repeats)
+        let request = UNNotificationRequest(identifier: localNotification.id, content: content, trigger: trigger)
+        
+        //Add request
+        try? await notificationCenter.add(request)
+        pendingAlarms = await notificationCenter.pendingNotificationRequests()
+    }
+    
+    func customSound(soundName: Sounds, fileExt: String = "") -> UNNotificationSound? {
+        let fileName = fileExt.isEmpty ? "\(soundName.rawValue)" : "\(soundName.rawValue).\(fileExt)"
+        
+        return UNNotificationSound(named: UNNotificationSoundName(rawValue: fileName))
+    }
+    
+    func removeRequest(id: String) {
+        notificationCenter.removeDeliveredNotifications(withIdentifiers: [id])
+        
+        //remove from pending alarms as well
+        if let index = pendingAlarms.firstIndex(where: {$0.identifier == id}) {
+            pendingAlarms.remove(at: index)
+        }
+    }
 }
