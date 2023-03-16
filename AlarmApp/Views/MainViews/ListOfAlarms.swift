@@ -10,7 +10,7 @@ struct ListOfAlarms: View {
         NavigationStack {
             ZStack {
                 List {
-                    ForEach(lnManager.alarmModels.indices) { i in
+                    ForEach(lnManager.alarmModels.indices, id: \.self) { i in
                         Button(action: {
                             currentIndex = i
                         }, label: {
@@ -42,7 +42,7 @@ struct ListOfAlarms: View {
     func delete(offsets: IndexSet) {
         // Remove from list of pending alarms
         for index in offsets {
-            
+            lnManager.removeRequest(id: lnManager.alarmModels[index].id )
         }
         
         // remove from alarmModels

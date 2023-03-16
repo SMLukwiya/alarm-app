@@ -4,11 +4,15 @@ import SwiftUI
 struct CancelSaveAlarm: View {
     let currentAlarmIndex: Int?
     @Binding var alarmModel: AlarmModel
+    @EnvironmentObject var lnManager: LocalNotificationsManager
+    
+    // we dismiss the view after saving or cancelling
+    @Environment(\.presentationMode) var presentation
     
     var body: some View {
         HStack {
             Button(action: {
-                
+                self.presentation.wrappedValue.dismiss()
             }, label: {
                 Text("cancel")
             })
@@ -17,10 +21,21 @@ struct CancelSaveAlarm: View {
             
             Button(action: {
                 if let currentAlarmIndex = currentAlarmIndex {
-                    // TODO: Edit alarm to view model
+                    // save edited alarm
+                    lnManager.alarmModels[currentAlarmIndex] = alarmModel
                 } else {
-                    // TODO: Add alarm
+                    // apend new alarm
+                    lnManager.safeAppend(localNotification: alarmModel)
                 }
+                // immediately schedule alarm if it is enabled
+                Task {
+                    if alarmModel.alarmEnabled {
+                        await lnManager.schedule(localNotification: alarmModel)
+                    } else {
+                        lnManager.removeRequest(id: alarmModel.id)
+                    }
+                }
+                self.presentation.wrappedValue.dismiss()
             }, label: {
                 Text("Save")
             })
@@ -30,6 +45,6 @@ struct CancelSaveAlarm: View {
 
 struct CancelSaveAlarm_Previews: PreviewProvider {
     static var previews: some View {
-        CancelSaveAlarm(currentAlarmIndex: nil, alarmModel: .constant(.DefaultAlarm()   ))
+        CancelSaveAlarm(currentAlarmIndex: nil, alarmModel: .constant(.DefaultAlarm())).environmentObject(LocalNotificationsManager())
     }
 }
