@@ -2,10 +2,8 @@
 import SwiftUI
 
 struct AboutView: View {
-    var body: some View {
-        ZStack {
-            LinearGradient(colors: [.yellow, black], startPoint: .top, endPoint: .bottom)
-                .ignoresSafeArea()
+        var body: some View {
+            ZStack {
             
             VStack {
                 VStack {
