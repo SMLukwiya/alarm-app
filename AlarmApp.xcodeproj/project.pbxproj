@@ -58,6 +58,7 @@
 		6F1CDD7C29C2285800A2A23B /* acoustic-guitar.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6F1CDD7529C2285800A2A23B /* acoustic-guitar.mp3 */; };
 		6F1CDD7E29C237D400A2A23B /* PlaySound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1CDD7D29C237D400A2A23B /* PlaySound.swift */; };
 		6F1CDD8029C2406700A2A23B /* SoundMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1CDD7F29C2406700A2A23B /* SoundMenuView.swift */; };
+		6F1CDD8229C7FD8600A2A23B /* ChooseAlarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1CDD8129C7FD8600A2A23B /* ChooseAlarm.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -116,6 +117,7 @@
 		6F1CDD7529C2285800A2A23B /* acoustic-guitar.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "acoustic-guitar.mp3"; sourceTree = "<group>"; };
 		6F1CDD7D29C237D400A2A23B /* PlaySound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaySound.swift; sourceTree = "<group>"; };
 		6F1CDD7F29C2406700A2A23B /* SoundMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundMenuView.swift; sourceTree = "<group>"; };
+		6F1CDD8129C7FD8600A2A23B /* ChooseAlarm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseAlarm.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -273,6 +275,7 @@
 				6F1CDD4229BEDBB200A2A23B /* MainGradient.swift */,
 				6F1CDD4C29C00F6400A2A23B /* YouDidIt.swift */,
 				6F1CDD4E29C0150400A2A23B /* WakeUp.swift */,
+				6F1CDD8129C7FD8600A2A23B /* ChooseAlarm.swift */,
 			);
 			path = SubViews;
 			sourceTree = "<group>";
@@ -400,6 +403,7 @@
 			files = (
 				6F1CDD4F29C0150400A2A23B /* WakeUp.swift in Sources */,
 				6F1CDD8029C2406700A2A23B /* SoundMenuView.swift in Sources */,
+				6F1CDD8229C7FD8600A2A23B /* ChooseAlarm.swift in Sources */,
 				6F1CDD5D29C0AD8000A2A23B /* AlarmRow.swift in Sources */,
 				6F1CDD4329BEDBB200A2A23B /* MainGradient.swift in Sources */,
 				6F1CDD3D29BED05B00A2A23B /* CustomText.swift in Sources */,

@@ -24,7 +24,7 @@ struct ListOfAlarms: View {
             .navigationTitle("Alarm List")
             .sheet(isPresented: $isActive,onDismiss: {}) {
                 // Edit the currentIndex alarm
-                wrapAddEditAlarmView(currentAlarmIndex: $currentIndex)
+                ChooseAlarm(currentAlarmIndex: $currentIndex)
             }
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
@@ -52,19 +52,6 @@ struct ListOfAlarms: View {
         
         // remove from alarmModels
         lnManager.alarmModels.remove(atOffsets: offsets)
-    }
-}
-
-struct wrapAddEditAlarmView: View {
-    @Binding var currentAlarmIndex: Int?
-    @EnvironmentObject var lnManager: LocalNotificationsManager
-    
-    var body: some View {
-        if let currentAlarmIndex = currentAlarmIndex {
-            AddEditAlarmView(currentAlarmIndex: currentAlarmIndex, alarmModel: lnManager.alarmModels[currentAlarmIndex] )
-        } else {
-            AddEditAlarmView(currentAlarmIndex: currentAlarmIndex, alarmModel: .DefaultAlarm())
-        }
     }
 }
 
