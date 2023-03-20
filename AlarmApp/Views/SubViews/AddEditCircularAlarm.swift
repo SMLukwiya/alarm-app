@@ -15,7 +15,7 @@ struct AddEditCircularAlarm: View {
                 Divider()
                 Spacer()
                 
-                CircularTime(currentAlarmIndex: currentAlarmIndex, alarmModel:  alarmModel, size: screenWidth/2 )
+                CircularTime(currentAlarmIndex: currentAlarmIndex, alarmModel:  $alarmModel, size: screenWidth/2 )
                 Spacer()
             }.padding()
         }

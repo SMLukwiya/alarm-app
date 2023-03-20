@@ -3,7 +3,8 @@ import SwiftUI
 
 struct CircularTime: View {
     let currentAlarmIndex: Int?
-    @State var alarmModel: AlarmModel
+    @Binding var alarmModel: AlarmModel
+    
     let size: CGFloat
     
     var startTime: Date {
@@ -60,6 +61,6 @@ struct CircularTime: View {
 
 struct CircularTime_Previews: PreviewProvider {
     static var previews: some View {
-        CircularTime(currentAlarmIndex: nil, alarmModel: .DefaultAlarm(), size: screenWidth/2)
+        CircularTime(currentAlarmIndex: nil, alarmModel: .constant(.DefaultAlarm()), size: screenWidth/2)
     }
 }
