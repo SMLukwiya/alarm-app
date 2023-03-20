@@ -13,18 +13,23 @@ struct ListOfAlarms: View {
                     ForEach(lnManager.alarmModels.indices, id: \.self) { i in
                         Button(action: {
                             currentIndex = i
+                            isActive.toggle()
                         }, label: {
-                            AlarmRow(model: lnManager.alarmModels[i], i: i)
+                            AlarmRow(model: lnManager.alarmModels[i], i: i).padding(.vertical)
                         })
                     }
                     .onDelete(perform: delete)
                 }
             }
             .navigationTitle("Alarm List")
+            .sheet(isPresented: $isActive,onDismiss: {}) {
+                // Edit the currentIndex alarm
+                wrapAddEditAlarmView(currentAlarmIndex: $currentIndex)
+            }
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
-                    NavigationLink(destination: {
-                        MainAddEditAlarm(currentAlarmIndex: nil, alarmModel: .DefaultAlarm())
+                    Button(action: {
+                        isActive.toggle()
                     }, label: {
                         Text("+")
                             .font(.largeTitle)
@@ -47,6 +52,19 @@ struct ListOfAlarms: View {
         
         // remove from alarmModels
         lnManager.alarmModels.remove(atOffsets: offsets)
+    }
+}
+
+struct wrapAddEditAlarmView: View {
+    @Binding var currentAlarmIndex: Int?
+    @EnvironmentObject var lnManager: LocalNotificationsManager
+    
+    var body: some View {
+        if let currentAlarmIndex = currentAlarmIndex {
+            AddEditAlarmView(currentAlarmIndex: currentAlarmIndex, alarmModel: lnManager.alarmModels[currentAlarmIndex] )
+        } else {
+            AddEditAlarmView(currentAlarmIndex: currentAlarmIndex, alarmModel: .DefaultAlarm())
+        }
     }
 }
 
