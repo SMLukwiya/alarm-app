@@ -10,7 +10,7 @@ struct AlarmRowButton: View {
     @Binding var isActive: Bool
     
     var body: some View {
-        HStack {
+        HStack(spacing: 10  ) {
             Button(action: {
                 currentIndex = i
                 isActive.toggle()
