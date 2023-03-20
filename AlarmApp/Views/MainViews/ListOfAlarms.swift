@@ -5,18 +5,14 @@ struct ListOfAlarms: View {
     @EnvironmentObject var lnManager: LocalNotificationsManager
     @State var isActive = false
     @State var currentIndex: Int? = nil
+    @State var addEditViewType: AddEditViewType = .circular
     
     var body: some View {
         NavigationStack {
             ZStack {
                 List {
                     ForEach(lnManager.alarmModels.indices, id: \.self) { i in
-                        Button(action: {
-                            currentIndex = i
-                            isActive.toggle()
-                        }, label: {
-                            AlarmRow(model: lnManager.alarmModels[i], i: i).padding(.vertical)
-                        })
+                        AlarmRowButton(model: lnManager.alarmModels[i], i: i, currentIndex: $currentIndex, isActive: $isActive).padding(.vertical)
                     }
                     .onDelete(perform: delete)
                 }
@@ -24,7 +20,7 @@ struct ListOfAlarms: View {
             .navigationTitle("Alarm List")
             .sheet(isPresented: $isActive,onDismiss: {}) {
                 // Edit the currentIndex alarm
-                ChooseAlarm(currentAlarmIndex: $currentIndex)
+                ChooseAlarm(currentAlarmIndex: $currentIndex, addEditViewType: addEditViewType)
             }
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
