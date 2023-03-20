@@ -5,7 +5,7 @@ struct ListOfAlarms: View {
     @EnvironmentObject var lnManager: LocalNotificationsManager
     @State var isActive = false
     @State var currentIndex: Int? = nil
-    @State var addEditViewType: AddEditViewType = .circular
+    @State var addEditViewType: AddEditViewType = .standard         
     
     var body: some View {
         NavigationStack {
